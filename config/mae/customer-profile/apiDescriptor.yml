@@ -20,4 +20,8 @@ spec:
   location:
     path: /api-docs
     baseURL:
-      url: https://customer-profile-mae.run.postcvs.tapsme.org
+      ref:
+        apiVersion: serving.knative.dev/v1
+        kind: Service
+        name: customer-profile
+
